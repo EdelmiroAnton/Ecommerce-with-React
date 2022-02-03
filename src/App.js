@@ -1,6 +1,8 @@
 import { ListItemContainer } from "./Components/ListItemContainer/ListItemContainer";
 import { NavBar } from "./Components/NavBar/NavBar"
-import "./styles.css"
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './styles/styles.scss'
+
 
 
 function App() {
@@ -8,7 +10,7 @@ function App() {
   return (
     <>
       <NavBar/>
-      <ListItemContainer mensaje="Desafío 2"/>
+      <ListItemContainer mensaje="Productos"/>
  
     </>
   );

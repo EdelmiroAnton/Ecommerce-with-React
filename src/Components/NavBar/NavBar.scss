@@ -27,7 +27,7 @@
 
 .navBar-enlace{
     cursor: pointer;
-    
+    color: rgb(0, 0, 0);
 }
 
 .cart{
@@ -36,4 +36,15 @@
 
 .cart img{
     width: 30px;
+}
+
+.carrito {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.parentesis{
+    margin: 9px 0 10px 5px;
+    font-size: 20px;
 }
