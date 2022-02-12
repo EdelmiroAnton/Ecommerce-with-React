@@ -1,0 +1,12 @@
+.btnContador{
+    display: flex;
+}
+
+.btnContador .boton{
+    z-index: 0;
+}
+
+.btnContador p{
+ margin-left: -20px;
+ z-index: 1;
+}

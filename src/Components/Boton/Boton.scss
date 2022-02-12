@@ -5,6 +5,7 @@
     padding: 5px 10px;
     border: none;
     border-radius: 10px;
+    width: 150px;
     
     &:hover{
         background-color: lighten($color: rgb(247, 119, 34), $amount: 10%);
@@ -15,3 +16,7 @@
         transition: all .1s ease-in;
     }
 }
+
+// .addToCart{
+//     margin-left: -35px;
+// }

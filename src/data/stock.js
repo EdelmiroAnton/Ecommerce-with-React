@@ -11,7 +11,7 @@ import flamenca from "../img/guitarras/criollas/flamenca.jpg"
 
 export const stock = [
     {
-        ID: 1,
+        id: 1,
         tipo: "Electrica",
         marca: "Fender",
         modelo: "Stratocaster",
@@ -20,7 +20,7 @@ export const stock = [
         img: stratocaster
     },
     {
-        ID: 2,
+        id: 2,
         tipo: "Electrica",
         marca: "Fender",
         modelo:"Telecaster",
@@ -29,7 +29,7 @@ export const stock = [
         img: telecaster
     },
     {
-        ID: 3,
+        id: 3,
         tipo: "Electrica",
         marca: "Gibson",
         modelo: "Les Paul",
@@ -38,7 +38,7 @@ export const stock = [
         img: lespaul
     },
     {
-        ID: 4,
+        id: 4,
         tipo: "Electrica",
         marca: "Gibson",
         modelo: "SG",
@@ -47,7 +47,7 @@ export const stock = [
         img: sg
     },
     {
-        ID: 5,
+        id: 5,
         tipo: "Acustica",
         marca: "Alhambra",
         modelo:"Auditorium",
@@ -56,7 +56,7 @@ export const stock = [
         img: auditorium
     },
     {
-        ID: 6,
+        id: 6,
         tipo: "Acustica",
         marca: "Sigma",
         modelo:"Parlor",
@@ -65,7 +65,7 @@ export const stock = [
         img: parlor
     },
     {
-        ID: 7,
+        id: 7,
         tipo: "Acustica",
         marca: "Yamaha",
         modelo:"Jumbo",
@@ -74,7 +74,7 @@ export const stock = [
         img: jumbo
     },
     {
-        ID: 8,
+        id: 8,
         tipo: "Acustica",
         marca: "Yamaha",
         modelo:"Dreadnought",
@@ -83,7 +83,7 @@ export const stock = [
         img: dreadnought
     },
     {
-        ID: 9,
+        id: 9,
         tipo: "Acustica",
         marca: "Sigma",
         modelo:"Concert",
@@ -92,7 +92,7 @@ export const stock = [
         img: concert
     },
     {
-        ID: 10,
+        id: 10,
         tipo: "Criolla",
         marca: "Gracia",
         modelo:"Flamenca",

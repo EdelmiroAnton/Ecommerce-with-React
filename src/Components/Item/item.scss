@@ -1,11 +1,31 @@
 .card-body p{
     margin-bottom: 0rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card-title{
+    text-align: center;
 }
 
 .tarjetas .card{
     max-width: 250px;
-    margin: 5px 5px;
+    margin: 20px 20px;
     padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 20px rgb(218, 218, 218);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    line-height: 27px;
+    cursor: pointer;
+}
+
+.tarjetas .card:hover{
+    transform: scale(1.05, 1.05);
+    transition: all 0.2s ease-in-out;
 }
 
 
@@ -96,3 +116,5 @@ button {
    button:hover .button-text {
     color: #fff;
    }
+
+   

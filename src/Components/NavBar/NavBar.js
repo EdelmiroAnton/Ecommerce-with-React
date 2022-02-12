@@ -2,6 +2,7 @@ import "./NavBar.scss"
 import cart from "../../img/cart.svg"
 import { Navbar, Container, Form, Offcanvas, Body, Nav, Button, NavDropdown, FormControl  } from "react-bootstrap"
 import { Contador } from "../Contador/Contador"
+import { Link } from "react-router-dom"
 
 
 
@@ -43,17 +44,17 @@ export const NavBar = () =>{
       </Offcanvas.Header>
       <Offcanvas.Body>
         <Nav className="justify-content-end flex-grow-1 pe-3">
-          <Nav.Link href="#action1">Home</Nav.Link>
-          <Nav.Link href="#action2">Promociones</Nav.Link>
-          <Nav.Link href="#action2">Ver Carrito </Nav.Link>
+          <Link to="/" className="nav-link"> Home </Link>
+          {/* <Link to="/productos" className="nav-link"> Productos </Link> */}
+          <Link to="/carrito" className="nav-link"> Ver Carrito </Link>
           <NavDropdown title="Guitarras" id="offcanvasNavbarDropdown">
-            <NavDropdown.Item href="#action3">Electricas</NavDropdown.Item>
-            <NavDropdown.Item href="#action4">Acusticas</NavDropdown.Item>
-            <NavDropdown.Item href="#action4">Criollas</NavDropdown.Item>
+            <Link to="guitarras/Electrica" className="nav-item"> Eléctricas </Link>
+            <Link to="guitarras/Acustica" className="nav-item"> Acústicas </Link>
+            <Link to="guitarras/Criolla" className="nav-item"> Criollas </Link>
             <NavDropdown.Divider />
-            <NavDropdown.Item href="#action5">
+            <Link to="/accesorios" className="nav-item">
               Accesorios
-            </NavDropdown.Item>
+            </Link>
           </NavDropdown>
         </Nav>
         <Form className="d-flex">
@@ -65,6 +66,7 @@ export const NavBar = () =>{
           />
           <Button variant="outline-success">Buscar</Button>
         </Form>
+        <Link to="/contacto" className="nav-link"> Contacto </Link>
       </Offcanvas.Body>
     </Navbar.Offcanvas>
   </Container>

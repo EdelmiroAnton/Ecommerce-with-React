@@ -5,7 +5,9 @@ export const Boton = ({click}) =>{
 
     return(   
 
-        <button className="boton" onClick={click}> Add to Cart </button>                               
+        <button className="boton" onClick={click}> 
+            <span className="addToCart">Add to Cart</span> 
+        </button>                               
             
 
     )

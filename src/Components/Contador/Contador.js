@@ -1,6 +1,6 @@
 import { Boton } from "../Boton/Boton"
 import { useState} from "react"
-
+import "./contador.scss"
 
 
 export const Contador = () => {
@@ -15,11 +15,11 @@ export const Contador = () => {
 
     return (
         <>
+        <div className='btnContador'>
+            <Boton click={sumar}></Boton>
 
-        <Boton click={sumar}></Boton>
-
-        <p>  {botonSuma} </p>
-        
+            <p>  {botonSuma} </p>
+        </div>
         </>
     )
 

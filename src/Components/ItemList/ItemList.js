@@ -6,11 +6,10 @@ export const ItemList = ( {productos, mensaje} ) => {
     
     return (
         
-        <div className="row tarjetas justify-content-md-center">
+        <div className="row tarjetas justify-content-center">
             <h1 className="mensaje">{mensaje}</h1>  
-            {productos.map((el) => <Item key={el.ID} {...el}/>
+            {productos.map((el) => <Item key={el.id} {...el}/>
                 )}
-            
         </div>
         
         

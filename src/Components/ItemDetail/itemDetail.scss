@@ -1,0 +1,32 @@
+.item-detail{
+    margin: auto;
+    margin-top: 10px;
+    max-width: 60%;
+    background-color: #dff5f7;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 3px 3px 20px grey;
+    cursor: pointer;
+}
+
+.item-detail .img-item-detail{
+    mix-blend-mode: multiply;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.display-flex{
+    display: flex;
+    padding: 20px;
+}
+
+.item-detail-text{
+    display: block;
+    align-items: center;
+    text-align: center;
+    margin: auto 20px;
+}
+
+.itemDescription{
+    margin: auto;
+}

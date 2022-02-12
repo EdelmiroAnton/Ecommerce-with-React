@@ -1,5 +1,5 @@
 .header{    
-    background-color: rgb(160, 255, 184);
+    background-color: #005F66;
     width: 100%;
     padding: 20px 50px;
     display: flex;
@@ -47,4 +47,25 @@
 .parentesis{
     margin: 9px 0 10px 5px;
     font-size: 20px;
+}
+
+.nav-link{
+    text-decoration: none;
+}
+
+.nav-item{
+    text-decoration: none;
+    width: 100%;
+    color: black;
+    margin-left: 5px;
+    display: block;
+    padding: 3px 5px;
+}
+
+.nav-item:hover{
+    text-decoration: none;
+    background-color: rgb(226, 225, 225);
+    color: black;
+    margin-left: 0px;
+    transition: all 0.2s ease;
 }
