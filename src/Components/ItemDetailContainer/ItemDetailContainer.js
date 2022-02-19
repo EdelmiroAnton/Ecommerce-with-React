@@ -1,17 +1,20 @@
-import { useEffect, useState } from "react"
+import { createContext, useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
 import { Loader } from "../../helpers/loader"
 import { pedirDatos } from "../../helpers/pedirDatos"
 import { ItemDetail } from "../ItemDetail/ItemDetail"
 import "../../helpers/loader.scss"
+import loader from "../../img/guitarras/loader.jpg"
+import { CartContext } from "../../context/CartContext"
 
 export const ItemDetailContainer = () => {
+
 
     const [loading, setLoading] = useState(false)
     const [item, setItem] = useState(null)
 
     const { itemId } = useParams()
-    console.log(item)
+    // console.log(item)
 
 
 
@@ -35,7 +38,7 @@ export const ItemDetailContainer = () => {
     <div>
             {
                 loading 
-                ? <Loader/>
+                ? <img src={loader} className="loader"/> 
                 : <ItemDetail {...item}/>
             }
         

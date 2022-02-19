@@ -6,15 +6,16 @@ import { BrowserRouter, Routes, Route, Navigate} from "react-router-dom"
 import { Productos } from "./Components/Productos/productos";
 import { Contacto } from "./Components/Contacto/Contacto";
 import { ItemDetailContainer } from "./Components/ItemDetailContainer/ItemDetailContainer";
-
+import { CartProvider } from "./context/CartContext";
+import{ Cart } from "./Components/Cart/Cart";
 
 
 function App() {
-
+  
   return (
-    
-      <BrowserRouter>
-
+     
+    <CartProvider>
+          <BrowserRouter>
             <NavBar/>
             <Routes>
 {/* El "path" te muestra la URL a la que queremos ir, y el atributo "element" muestra
@@ -24,6 +25,7 @@ function App() {
                   <Route path="/guitarras/:categoria" element={ <ListItemContainer/>}  />
                   <Route path="/detail/:itemId" element={<ItemDetailContainer/>} />
                   <Route path="/Contacto" element={ <Contacto/> }  />
+                  <Route path="/cart" element={ <Cart/> }  />
                   <Route path="*" element={ <Navigate to="/" /> }/> 
 
                   
@@ -31,11 +33,9 @@ function App() {
                   {/* Hacer un path "*" de un ERROR 404 */}
             </Routes>
 
-       
-            
-         
-      </BrowserRouter>
-    
+        </BrowserRouter>
+    </CartProvider>
+      
   );
 }
 

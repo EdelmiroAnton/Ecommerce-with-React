@@ -1,0 +1,22 @@
+.boton {
+  color: white;
+  background-color: #f77722;
+  margin: 0 auto;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 10px;
+  width: 150px;
+}
+
+.boton:hover {
+  background-color: #f99553;
+  -webkit-transition: all .1s ease-in;
+  transition: all .1s ease-in;
+}
+
+.boton:active {
+  background-color: #de5d08;
+  -webkit-transition: all .1s ease-in;
+  transition: all .1s ease-in;
+}
+/*# sourceMappingURL=Boton.css.map */

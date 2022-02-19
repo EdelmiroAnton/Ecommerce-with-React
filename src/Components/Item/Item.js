@@ -1,5 +1,5 @@
 import { Button, Card } from 'react-bootstrap';
-import { Contador } from '../Contador/Contador';
+import { Contador } from '../ItemCount/ItemCount';
 import {Link} from "react-router-dom"
 import "./item.scss"
 
@@ -24,7 +24,7 @@ export const Item = ({ id, tipo, marca, color, precio, img, modelo}) => {
                                         <span className="button-text">Ver Mas</span>
                                     </button>
                                 </Link>                         
-                                    <Contador/>            
+                                     
                             </Card.Body>
                     </Card>
                 

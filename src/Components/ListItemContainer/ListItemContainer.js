@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react"
-import { Loader } from "../../helpers/loader"
 import { pedirDatos } from "../../helpers/pedirDatos"
 import { ItemList } from "../ItemList/ItemList"
 import "./ListItemContainer.scss"
 import loader from "../../img/guitarras/loader.jpg"
 import { useParams } from "react-router-dom"
+import { db } from "../../Firebase/config"
+import { collection, getDocs } from "firebase/firestore"
 
 
 
@@ -35,6 +36,8 @@ export const ListItemContainer = ({ mensaje }) => {
                         console.log("Peticion finalizada")
                         setLogading(false)
                     })
+
+                
     }, [categoria])
 
     return (

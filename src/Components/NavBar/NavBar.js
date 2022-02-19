@@ -1,9 +1,9 @@
 import "./NavBar.scss"
 import cart from "../../img/cart.svg"
 import { Navbar, Container, Form, Offcanvas, Body, Nav, Button, NavDropdown, FormControl  } from "react-bootstrap"
-import { Contador } from "../Contador/Contador"
+import { Itemcount } from "../ItemCount/ItemCount"
 import { Link } from "react-router-dom"
-
+import { CartWidget } from "../CartWidget/CartWidget"
 
 
 
@@ -72,8 +72,7 @@ export const NavBar = () =>{
   </Container>
 </Navbar>
         <div className="carrito" >
-        <img src={cart}/>
-        <p className="parentesis" >(  )</p>
+        <CartWidget/>
         </div>   
         </header>
 

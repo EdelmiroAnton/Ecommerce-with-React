@@ -17,7 +17,8 @@ export const stock = [
         modelo: "Stratocaster",
         color: "Blanca",
         precio: 60000,
-        img: stratocaster
+        img: stratocaster,
+        stock: 15
     },
     {
         id: 2,
@@ -26,7 +27,8 @@ export const stock = [
         modelo:"Telecaster",
         color: "Blanca y Negra",
         precio: 30000,
-        img: telecaster
+        img: telecaster,
+        stock: 15
     },
     {
         id: 3,
@@ -35,7 +37,8 @@ export const stock = [
         modelo: "Les Paul",
         color: "Roja",
         precio: 25000,
-        img: lespaul
+        img: lespaul,
+        stock: 15
     },
     {
         id: 4,
@@ -44,7 +47,8 @@ export const stock = [
         modelo: "SG",
         color: "Roja",
         precio: 25000,
-        img: sg
+        img: sg,
+        stock: 15
     },
     {
         id: 5,
@@ -53,7 +57,8 @@ export const stock = [
         modelo:"Auditorium",
         color: "Sunburst",
         precio: 80000,
-        img: auditorium
+        img: auditorium,
+        stock: 15
     },
     {
         id: 6,
@@ -62,7 +67,8 @@ export const stock = [
         modelo:"Parlor",
         color: "Natural",
         precio: 200000,
-        img: parlor
+        img: parlor,
+        stock: 15
     },
     {
         id: 7,
@@ -71,7 +77,8 @@ export const stock = [
         modelo:"Jumbo",
         color: "Natural",
         precio: 200000,
-        img: jumbo
+        img: jumbo,
+        stock: 15
     },
     {
         id: 8,
@@ -80,7 +87,8 @@ export const stock = [
         modelo:"Dreadnought",
         color: "Natural",
         precio: 200000,
-        img: dreadnought
+        img: dreadnought,
+        stock: 15
     },
     {
         id: 9,
@@ -89,7 +97,8 @@ export const stock = [
         modelo:"Concert",
         color: "Natural",
         precio: 200000,
-        img: concert
+        img: concert,
+        stock: 15
     },
     {
         id: 10,
@@ -98,7 +107,8 @@ export const stock = [
         modelo:"Flamenca",
         color: "Natural",
         precio: 200000,
-        img: flamenca
+        img: flamenca,
+        stock: 15
     },
 
 ]

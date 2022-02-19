@@ -1,0 +1,11 @@
+.cart-widget {
+  color: white;
+  font-size: 50px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.cart-widget:hover {
+  color: #61f761;
+}
+/*# sourceMappingURL=CartWidget.css.map */

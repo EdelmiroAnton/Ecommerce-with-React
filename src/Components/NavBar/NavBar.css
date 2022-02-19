@@ -1,0 +1,88 @@
+.header {
+  background-color: #005F66;
+  width: 100%;
+  padding: 20px 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.logo {
+  max-width: 20%;
+  height: 100%;
+}
+
+.navBar {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.enlaces {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: 50px;
+}
+
+.navBar-enlace {
+  cursor: pointer;
+  color: black;
+}
+
+.cart {
+  cursor: pointer;
+}
+
+.cart img {
+  width: 30px;
+}
+
+.carrito {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-link {
+  text-decoration: none;
+}
+
+.nav-item {
+  text-decoration: none;
+  width: 100%;
+  color: black;
+  margin-left: 5px;
+  display: block;
+  padding: 3px 5px;
+}
+
+.nav-item:hover {
+  text-decoration: none;
+  background-color: #e2e1e1;
+  color: black;
+  margin-left: 0px;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+/*# sourceMappingURL=NavBar.css.map */

@@ -21,11 +21,11 @@
     flex-direction: column;
     line-height: 27px;
     cursor: pointer;
+    transition: all 0.2s ease-in-out;
 }
 
 .tarjetas .card:hover{
     transform: scale(1.05, 1.05);
-    transition: all 0.2s ease-in-out;
 }
 
 
