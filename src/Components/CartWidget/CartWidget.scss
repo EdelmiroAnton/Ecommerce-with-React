@@ -2,8 +2,25 @@
     color: white;
     font-size: 50px;
     transition: all 0.2s ease-in-out;
+    z-index: 0;
 }
 
 .cart-widget:hover{
-    color: rgb(97, 247, 97);
+    color: rgb(209, 209, 209);
+}
+
+.cantidad-cart{
+    color: white;
+    background-color: black;
+    border-radius: 50px;
+    font-size: 18px;
+    z-index: 1;
+    position: absolute;
+    margin-left: -12px;
+    margin-top: 16px;
+    max-height: 23px;
+    height: 23px;
+    max-width: 36px;
+    width: 23px;
+    text-align: center;
 }

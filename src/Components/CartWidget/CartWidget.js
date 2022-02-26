@@ -12,10 +12,11 @@ export const CartWidget = () => {
     return(
          
     <Link to="/cart" className="cart-widget">
-    
-        <BsCartCheck/>
-        <span> {cantidadCart()} </span>
-
+        
+        
+            <BsCartCheck/>
+            <span className="cantidad-cart"> {cantidadCart()} </span>
+       
 
     </Link>
 

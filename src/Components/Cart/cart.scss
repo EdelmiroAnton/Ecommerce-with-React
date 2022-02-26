@@ -1,0 +1,62 @@
+.cart-view{
+    display: flex;
+}
+
+.cart-view div{
+    margin: 25px;
+    text-align: center;
+}
+
+.resumen-cart{
+    font-family: 'Arvo', serif;
+    text-align: center;
+}
+
+.img-cart{
+    padding: 10px;
+    margin: 25px;
+}
+
+.titulo{
+    font-size: 20px;
+    font-family: 'Arvo', serif;
+    text-transform: capitalize;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.detalle-cart{
+    max-height: 20px;
+    font-family: 'Arvo', serif;
+}
+
+.cart-total {
+    border: 0.5px solid rgb(185, 185, 185);
+    border-radius: 50px;
+    text-align: center;
+    width: 300px;
+    margin: auto;
+    padding: 20px;
+    font-family: 'Arvo', serif;
+}
+
+.precio-total{
+    font-family: 'Arvo', serif;
+}
+
+.eliminar-item{
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    margin-top: 77px;
+}
+
+.vaciar-cart{
+    width: 150px;
+    height: 40px;
+    margin-left: 60em;
+}
+
+.cart-vacio{
+    font-family: 'Arvo', serif;
+}
