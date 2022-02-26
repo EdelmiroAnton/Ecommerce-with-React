@@ -48,9 +48,9 @@ export const NavBar = () =>{
           {/* <Link to="/productos" className="nav-link"> Productos </Link> */}
           <Link to="/carrito" className="nav-link"> Ver Carrito </Link>
           <NavDropdown title="Guitarras" id="offcanvasNavbarDropdown">
-            <Link to="guitarras/Electrica" className="nav-item"> Eléctricas </Link>
-            <Link to="guitarras/Acustica" className="nav-item"> Acústicas </Link>
-            <Link to="guitarras/Criolla" className="nav-item"> Criollas </Link>
+            <Link to="guitarras/electrica" className="nav-item"> Eléctricas </Link>
+            <Link to="guitarras/acustica" className="nav-item"> Acústicas </Link>
+            <Link to="guitarras/criolla" className="nav-item"> Criollas </Link>
             <NavDropdown.Divider />
             <Link to="/accesorios" className="nav-item">
               Accesorios

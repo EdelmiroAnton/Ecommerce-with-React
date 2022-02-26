@@ -5,37 +5,53 @@ import "./ListItemContainer.scss"
 import loader from "../../img/guitarras/loader.jpg"
 import { useParams } from "react-router-dom"
 import { db } from "../../Firebase/config"
-import { collection, getDocs } from "firebase/firestore"
+import { collection, doc, getDocs, query, where } from "firebase/firestore"
 
 
 
 export const ListItemContainer = ({ mensaje }) => {
 
     const [productos, setProductos] = useState([])
-    const [loading, setLogading] = useState(false)
+    const [loading, setLoading] = useState(false)
 
-    const {categoria } = useParams()
+    const {categoria} = useParams()
 
        
     useEffect(() => {
-                setLogading(true)
+                setLoading(true)
 
-                pedirDatos()
+                // 1) Armar referencia
+                const productosRef = collection(db, "productos")
+                const q = categoria ? query(productosRef, where("categoria", "==", categoria)) : productosRef
+                // 2) Pedir referencia
+                getDocs(q)
                     .then((res) => {
-
-                        if (categoria) {
-                            setProductos(res.filter((el) => el.tipo === categoria))
-                        }else{
-                            setProductos(res)
-                        } 
-                    })
-                    .catch((err) => {
-                        console.log(err)
+                        setProductos(res.docs.map((doc) => {
+                            return {
+                                id: doc.id,
+                                ...doc.data()
+                            }
+                        }))
                     })
                     .finally(() => {
-                        console.log("Peticion finalizada")
-                        setLogading(false)
+                        setLoading(false)
                     })
+                // pedirDatos()
+                //     .then((res) => {
+
+                //         if (categoria) {
+                //             setProductos(res.filter((el) => el.tipo === categoria))
+                //         }else{
+                //             setProductos(res)
+                //         } 
+                //     })
+                //     .catch((err) => {
+                //         console.log(err)
+                //     })
+                //     .finally(() => {
+                //         console.log("Peticion finalizada")
+                //         setLogading(false)
+                //     })
 
                 
     }, [categoria])

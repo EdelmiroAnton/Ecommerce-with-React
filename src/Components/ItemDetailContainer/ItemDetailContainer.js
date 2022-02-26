@@ -6,6 +6,8 @@ import { ItemDetail } from "../ItemDetail/ItemDetail"
 import "../../helpers/loader.scss"
 import loader from "../../img/guitarras/loader.jpg"
 import { CartContext } from "../../context/CartContext"
+import { db } from "../../Firebase/config"
+import { doc, getDoc } from "firebase/firestore"
 
 export const ItemDetailContainer = () => {
 
@@ -21,15 +23,26 @@ export const ItemDetailContainer = () => {
         useEffect(() => {
             setLoading(true) 
 
-            pedirDatos()
-                .then((res) =>{
-                    setItem(res.find((el) => el.id === Number(itemId)))
+            // 1) Referencia al documento
+            const docRef = doc(db, "productos", itemId)
+
+            // 2) Peticion del documento
+            getDoc(docRef)
+                .then((doc) => {
+                setItem({id: doc.id, ...doc.data()})
+            })
+                .finally(() => {
+                    setLoading(false)
+                })
+            // pedirDatos()
+            //     .then((res) =>{
+            //         setItem(res.find((el) => el.id === Number(itemId)))
 
 
-            })
-            .finally(() => {
-                setLoading(false)
-            })
+            // })
+            // .finally(() => {
+            //     setLoading(false)
+            // })
             
         }, [])
 

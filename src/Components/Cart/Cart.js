@@ -76,11 +76,11 @@ export const Cart = () =>{
                             <p className="titulo">Total a Pagar (IVA incluido):</p>
                             <p className="precio-total"> ${totalCart()} </p>
         
-                            <button 
+                            <Link to="/checkout" 
                             className="btn btn-success"
                             // onClick
                             >Finaliza tu compra
-                            </button>   
+                            </Link>   
 
 
                     </div>

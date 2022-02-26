@@ -12,7 +12,7 @@ import flamenca from "../img/guitarras/criollas/flamenca.jpg"
 export const stock = [
     {
         id: 1,
-        tipo: "Electrica",
+        categoria: "Electrica",
         marca: "Fender",
         modelo: "Stratocaster",
         color: "Blanca",
@@ -22,7 +22,7 @@ export const stock = [
     },
     {
         id: 2,
-        tipo: "Electrica",
+        categoria: "Electrica",
         marca: "Fender",
         modelo:"Telecaster",
         color: "Blanca y Negra",
@@ -32,7 +32,7 @@ export const stock = [
     },
     {
         id: 3,
-        tipo: "Electrica",
+        categoria: "Electrica",
         marca: "Gibson",
         modelo: "Les Paul",
         color: "Roja",
@@ -42,7 +42,7 @@ export const stock = [
     },
     {
         id: 4,
-        tipo: "Electrica",
+        categoria: "Electrica",
         marca: "Gibson",
         modelo: "SG",
         color: "Roja",
@@ -52,7 +52,7 @@ export const stock = [
     },
     {
         id: 5,
-        tipo: "Acustica",
+        categoria: "Acustica",
         marca: "Alhambra",
         modelo:"Auditorium",
         color: "Sunburst",
@@ -62,7 +62,7 @@ export const stock = [
     },
     {
         id: 6,
-        tipo: "Acustica",
+        categoria: "Acustica",
         marca: "Sigma",
         modelo:"Parlor",
         color: "Natural",
@@ -72,7 +72,7 @@ export const stock = [
     },
     {
         id: 7,
-        tipo: "Acustica",
+        categoria: "Acustica",
         marca: "Yamaha",
         modelo:"Jumbo",
         color: "Natural",
@@ -82,7 +82,7 @@ export const stock = [
     },
     {
         id: 8,
-        tipo: "Acustica",
+        categoria: "Acustica",
         marca: "Yamaha",
         modelo:"Dreadnought",
         color: "Natural",
@@ -92,7 +92,7 @@ export const stock = [
     },
     {
         id: 9,
-        tipo: "Acustica",
+        categoria: "Acustica",
         marca: "Sigma",
         modelo:"Concert",
         color: "Natural",
@@ -102,7 +102,7 @@ export const stock = [
     },
     {
         id: 10,
-        tipo: "Criolla",
+        categoria: "criolla",
         marca: "Gracia",
         modelo:"Flamenca",
         color: "Natural",
