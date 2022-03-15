@@ -1,0 +1,77 @@
+@media only screen and (max-width: 768px) {
+
+    .footer{
+        width: 100%;
+        margin-bottom: 0px;
+        background-color: #99a5d1;
+        
+    }
+    
+    .textosFooter{
+        font-family: "Arvo";
+        font-size: 20px;
+        flex-wrap: wrap;
+    }
+    
+    .textosFooter p{
+        margin-top: 25px;
+        text-align: center;
+    }
+    
+    .emailFooter{
+        cursor: pointer;
+        margin-left: 10px;
+        color: black;
+    }
+    
+    .telFooter{
+        cursor: pointer;
+        margin-right: 10px;
+        color: black;
+    }
+    
+    .textFooter{
+        color: black;
+    }
+    
+
+}
+
+@media only screen and (min-width: 769px)
+{
+    .footer{
+        height: 80px;
+        width: 100%;
+        margin-bottom: 0px;
+        background-color: #99a5d1;
+    }
+    
+    .textosFooter{
+        display: flex;
+        justify-content: space-between;
+        font-family: "Arvo";
+        font-size: 20px
+    }
+    
+    .textosFooter p{
+        margin-top: 25px;
+        text-align: center;
+    }
+    
+    .emailFooter{
+        cursor: pointer;
+        margin-left: 10px;
+        color: black;
+    }
+    
+    .telFooter{
+        cursor: pointer;
+        margin-right: 10px;
+        color: black;
+    }
+    
+    .textFooter{
+        color: black;
+    }
+
+}

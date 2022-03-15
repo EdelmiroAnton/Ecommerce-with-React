@@ -1,11 +1,17 @@
 @import '../Components/NavBar/NavBar.scss';
 @import '../Components/ListItemContainer/ListItemContainer.scss' ;
-@import '../Components/Boton/Boton.scss';
 @import './global.scss';
+@import "../Components/ListItemContainer/ListItemContainer.scss";
 @import '../Components/CartWidget/CartWidget.scss';
 @import '../Components/Item/item.scss';
 @import '../Components/ItemCount/ItemCount.scss';
 @import '../Components/ItemDetail/itemDetail.scss';
 @import '../Components/ItemList/ItemList.scss';
 @import '../helpers/loader.scss';
-@import "../Components/Cart/cart.scss"
+@import "../Components/Cart/cart.scss";
+@import "../Components/Checkout/checkout.scss";
+@import "../Components/Home/home.scss";
+@import "../Components/Contacto/contacto.scss";
+@import "../Components/ItemCount/ItemCount.scss";
+@import '../Components/ItemList/ItemList.scss';
+@import "../Components/Footer/footer.scss";

@@ -1,15 +1,13 @@
 import { useEffect, useState } from "react"
-import { pedirDatos } from "../../helpers/pedirDatos"
 import { ItemList } from "../ItemList/ItemList"
-import "./ListItemContainer.scss"
+
 import loader from "../../img/guitarras/loader.jpg"
 import { useParams } from "react-router-dom"
 import { db } from "../../Firebase/config"
-import { collection, doc, getDocs, query, where } from "firebase/firestore"
+import { collection, getDocs, query, where } from "firebase/firestore"
+import { Footer } from "../Footer/Footer"
 
-
-
-export const ListItemContainer = ({ mensaje }) => {
+export const ListItemContainer = () => {
 
     const [productos, setProductos] = useState([])
     const [loading, setLoading] = useState(false)
@@ -35,39 +33,18 @@ export const ListItemContainer = ({ mensaje }) => {
                     })
                     .finally(() => {
                         setLoading(false)
-                    })
-                // pedirDatos()
-                //     .then((res) => {
-
-                //         if (categoria) {
-                //             setProductos(res.filter((el) => el.tipo === categoria))
-                //         }else{
-                //             setProductos(res)
-                //         } 
-                //     })
-                //     .catch((err) => {
-                //         console.log(err)
-                //     })
-                //     .finally(() => {
-                //         console.log("Peticion finalizada")
-                //         setLogading(false)
-                //     })
-
-                
-    }, [categoria])
+                    })                
+                }, [categoria])
 
     return (
-
         <main>
-            
             {
                 loading ? 
                 <img src={loader} className="loader"/>  
-                : <ItemList productos={productos} mensaje={mensaje}/>
+                : <ItemList productos={productos}/>
             }                                
-                            
-           
-        </main>
+                          <Footer/>  
+           </main>
             
         
         

@@ -1,16 +1,15 @@
-import { Button, Card } from 'react-bootstrap';
-import { Contador } from '../ItemCount/ItemCount';
+import { Card } from 'react-bootstrap';
 import {Link} from "react-router-dom"
 import "./item.scss"
 
-export const Item = ({ id, tipo, marca, color, precio, img, modelo}) => {
+export const Item = ({ id, categoria, marca, color, precio, img, modelo}) => {
 
     return (
-        
+        <>
                     <Card>
-                        <img className="img" src={img} width={"150px"} height={"150px"} className="imgItem"/>
+                        <img className="img" src={img} width={"150px"} height={"150px"}/>
                             <Card.Body>
-                                <Card.Title>Tipo: {tipo}</Card.Title>
+                                <Card.Title>Tipo: {categoria}</Card.Title>
                                 <Card.Text>Marca: {marca}</Card.Text>
                                 <Card.Text>Modelo: {modelo}</Card.Text>
                                 <Card.Text>Color: {color}</Card.Text>
@@ -27,7 +26,8 @@ export const Item = ({ id, tipo, marca, color, precio, img, modelo}) => {
                                      
                             </Card.Body>
                     </Card>
-                
+
+        </>
             
         
     )

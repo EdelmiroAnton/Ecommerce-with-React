@@ -1,66 +1,156 @@
-.header{    
-    background-color: #49516F;
-    width: 100%;
-    padding: 20px 50px;
-    display: flex;
-    justify-content: space-between;
+@media only screen and (max-width: 575px) {
+
+    .header{    
+        background-color: #49516F;
+        width: 100%;
+        padding: 20px 50px;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .logoContainer{
+        max-width: 30%;
+        display: block;
+        text-align: center;
+    }
+
+    .logo{
+        width: 55%;
+    }
+
+    
+    
+    .navBar{
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .enlaces{
+        width: 80%;
+        display: block;
+
+    }
+     ul li{
+         list-style: none;
+     }
+    
+    .enlaces li a{
+        text-decoration: none;
+        color: white;
+        font-size: 18px;
+        text-transform:uppercase;
+        transition: all 0.2s ease;
+        font-family: 'Arvo', serif;
+        margin-left: -20px;
+    }
+    
+    ul li a:hover{
+        color: rgb(209, 209, 209);
+    
+    }
+    
+    .nav-desplegable{
+        display: none;
+        margin-left: -29px;
+     
+    }
+    
+    .guitarras:hover .nav-desplegable{
+        display: block;
+    }
+    
+    .nav-desplegable li a{
+        display: block;
+        align-items: center;
+        text-align: center;
+        font-size: 18px;
+        margin-left: -5px;
+    
+    }
+    
 }
 
-.logo{
-    max-width: 20%;
-    height: 100%;
+
+@media only screen and (min-width: 576px) {
+
+    .header{    
+        background-color: #49516F;
+        width: 100%;
+        padding: 20px 50px;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .logoContainer{
+        max-width: 30%;
+        display: block;
+        text-align: center;
+    }
+
+    .logo{
+        width: 25%;
+    }
+    
+    .navBar{
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .navbar-expand-md .navbar-collapse {
+        display: flex!important;
+        margin-left: 30px;
+    }    
+
+    .enlaces{
+        width: 80%;
+        display: flex;
+        justify-content: space-around;
+        margin-left: 50px;
+    }
+     ul li{
+         list-style: none;
+     }
+    
+    .enlaces li a{
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        text-transform:uppercase;
+        transition: all 0.2s ease;
+        font-family: 'Arvo', serif;
+    }
+    
+    ul li a:hover{
+        color: rgb(209, 209, 209);
+    
+    }
+    
+    .nav-desplegable{
+        display: none;
+        margin-left: -29px;     
+    }
+    
+    .guitarras:hover .nav-desplegable{
+        display: block;
+    }
+    
+    .nav-desplegable li a{
+        display: block;
+        align-items: center;
+        text-align: center;
+        font-size: 18px;
+        margin-left: -5px;    
+    }
+    
 }
 
-.navBar{
-    width: 90%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
-.enlaces{
-    width: 80%;
-    display: flex;
-    justify-content: space-between;
-    margin-left: 50px;
-}
 
-.navBar-enlace{
-    cursor: pointer;
-    color: rgb(0, 0, 0);
-}
 
-.cart{
-    cursor: pointer;
-}
 
-.cart img{
-    width: 30px;
-}
 
-.carrito {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
-.nav-link{
-    text-decoration: none;
-}
-
-.nav-item{
-    text-decoration: none;
-    width: 100%;
-    color: black;
-    margin-left: 5px;
-    display: block;
-    padding: 3px 5px;
-}
-
-.nav-item:hover{
-    text-decoration: none;
-    background-color: rgb(226, 225, 225);
-    color: black;
-    margin-left: 0px;
-    transition: all 0.2s ease;
-}

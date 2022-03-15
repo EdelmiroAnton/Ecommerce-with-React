@@ -1,8 +1,7 @@
 import { Link } from "react-router-dom"
-import {BsCartCheck, BsBraces} from "react-icons/bs"
+import {BsCartCheck} from "react-icons/bs"
 import { useContext } from "react"
 import { CartContext } from "../../context/CartContext"
-
 
 
 export const CartWidget = () => {
@@ -11,14 +10,12 @@ export const CartWidget = () => {
 
     return(
          
-    <Link to="/cart" className="cart-widget">
-        
+        <Link to="/cart" className="cart-widget">
         
             <BsCartCheck/>
             <span className="cantidad-cart"> {cantidadCart()} </span>
        
-
-    </Link>
+        </Link>
 
     )
 }

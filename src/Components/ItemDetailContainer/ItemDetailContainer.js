@@ -11,14 +11,9 @@ import { doc, getDoc } from "firebase/firestore"
 
 export const ItemDetailContainer = () => {
 
-
     const [loading, setLoading] = useState(false)
     const [item, setItem] = useState(null)
-
     const { itemId } = useParams()
-    // console.log(item)
-
-
 
         useEffect(() => {
             setLoading(true) 
@@ -34,16 +29,7 @@ export const ItemDetailContainer = () => {
                 .finally(() => {
                     setLoading(false)
                 })
-            // pedirDatos()
-            //     .then((res) =>{
-            //         setItem(res.find((el) => el.id === Number(itemId)))
-
-
-            // })
-            // .finally(() => {
-            //     setLoading(false)
-            // })
-            
+                      
         }, [])
 
     return (
